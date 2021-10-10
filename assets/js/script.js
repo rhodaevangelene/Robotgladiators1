@@ -35,3 +35,30 @@ function fight() {
     window.alert("The fight has begun!");
   }
   fight();
+  var playerHealth = 100;
+
+  // check to see if the value of the playerHealth variable is greater than 0
+  if (playerHealth > 0) {
+    console.log("Your player is still alive!");
+  }
+  console.log(
+    playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining."
+  );
+  
+  // check enemy's health
+  if (enemyHealth <= 0) {
+    window.alert(enemyName + " has died!");
+  } 
+  else {
+    window.alert(enemyName + " still has " + enemyHealth + " health left.");
+  }
+  // put new code under this
+console.log(enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining.");
+
+// check player's health
+if (playerHealth <= 0) {
+  window.alert(playerName + " has died!");
+} 
+else {
+  window.alert(playerName + " still has " + playerHealth + " health left.");
+}
